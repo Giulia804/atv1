@@ -1,0 +1,30 @@
+/* globals.css */
+
+/* Garante que a página ocupe toda a altura e remove margens padrão do navegador */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Fundo vermelho para toda a página e texto em branco para contraste */
+html, body {
+  background-color: red; /* requisito: fundo vermelho */
+  color: white;           /* garante legibilidade do texto sobre o vermelho */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Faz com que o contêiner principal ocupe 100vh e centraliza o conteúdo */
+#__next, body > div {
+  min-height: 100vh;      /* ocupa toda a altura da janela */
+  display: flex;          /* ativa flexbox para centralizar itens */
+  align-items: center;    /* centraliza verticalmente */
+  justify-content: center;/* centraliza horizontalmente */
+}
+
+/* Estilo para o texto principal (título) */
+.main-greeting {
+  font-size: 3rem;        /* aumenta o tamanho do texto para apresentação */
+  font-weight: 700;       /* negrito */
+  text-align: center;     /* centraliza texto caso quebre linha */
+  margin: 0 1rem;         /* pequena margem horizontal para não encostar nas bordas */
+}
