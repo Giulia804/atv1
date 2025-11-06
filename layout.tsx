@@ -1,5 +1,5 @@
 // layout.tsx
-import "./globals.css";
+import "./globals.css"; // importa as regras definidas em globals.css
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,4 +7,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>{children}</body>
     </html>
   );
+
 }
